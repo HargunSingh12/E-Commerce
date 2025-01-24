@@ -23,10 +23,10 @@ const userSchema = new mongoose.Schema({
                 type:Number,
                 ddefault:1
             },
-            // product:{
-            //     type:mongo.Schema.Types.ObjectId,
-            //     ref:"Product"
-            // }
+            product:{
+                type:mongoose.Schema.Types.ObjectId,
+                ref:"Product"
+            }
         }
     ],
     role:{
