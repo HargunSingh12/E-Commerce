@@ -129,6 +129,7 @@ export const refreshController =async (req,res) => {
 
 export const getProfile = async (req,res) => {
   try {
+    res.json(res.user)
     
   } catch (error) {
     console.log("Error in getProfile controller:",error.message)
